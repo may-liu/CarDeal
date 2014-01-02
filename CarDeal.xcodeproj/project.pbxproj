@@ -19,6 +19,7 @@
 		6CDD009418752CC30055BAB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDD007C18752CC30055BAB8 /* UIKit.framework */; };
 		6CDD009C18752CC30055BAB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6CDD009A18752CC30055BAB8 /* InfoPlist.strings */; };
 		6CDD009E18752CC30055BAB8 /* CarDealTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD009D18752CC30055BAB8 /* CarDealTests.m */; };
+		6CDD00A918752D180055BAB8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDD00A818752D180055BAB8 /* RootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		6CDD009918752CC30055BAB8 /* CarDealTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CarDealTests-Info.plist"; sourceTree = "<group>"; };
 		6CDD009B18752CC30055BAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6CDD009D18752CC30055BAB8 /* CarDealTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarDealTests.m; sourceTree = "<group>"; };
+		6CDD00A718752D180055BAB8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		6CDD00A818752D180055BAB8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +114,8 @@
 				6CDD008818752CC30055BAB8 /* AppDelegate.m */,
 				6CDD008A18752CC30055BAB8 /* Images.xcassets */,
 				6CDD007F18752CC30055BAB8 /* Supporting Files */,
+				6CDD00A718752D180055BAB8 /* RootViewController.h */,
+				6CDD00A818752D180055BAB8 /* RootViewController.m */,
 			);
 			path = CarDeal;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			files = (
 				6CDD008918752CC30055BAB8 /* AppDelegate.m in Sources */,
 				6CDD008518752CC30055BAB8 /* main.m in Sources */,
+				6CDD00A918752D180055BAB8 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +296,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -329,7 +335,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
