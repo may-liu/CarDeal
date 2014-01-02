@@ -14,11 +14,17 @@
 
 @implementation RootViewController
 
-- (void) initCustomView {
-    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(180, 20, 50, 44)];
+- (void) initCustomViewWithParentView:(UIView *) parentView {
+    
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 120, 50, 44)];
     [label1 setText:@"车型:"];
-    [[self view] addSubview:label1];
+    [parentView addSubview:label1];
     [label1 release];
+    
+    UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(20, 180, 50, 44)];
+    [label2 setText:@"花费:"];
+    [parentView addSubview:label2];
+    [label2 release];
 }
 
 
@@ -26,7 +32,12 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self initCustomView];
+        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 960, 1200)];
+        [scrollView setPagingEnabled:YES];
+        [scrollView setContentSize:CGSizeMake(400, 900)];
+        [self initCustomViewWithParentView:scrollView];
+        [[self view] addSubview:scrollView];
+        [scrollView release];
     }
     return self;
 }
