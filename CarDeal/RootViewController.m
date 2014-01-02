@@ -15,7 +15,7 @@
 @implementation RootViewController
 
 - (void) initCustomView {
-    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 50, 44)];
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(180, 20, 50, 44)];
     [label1 setText:@"车型:"];
     [[self view] addSubview:label1];
     [label1 release];
