@@ -14,14 +14,23 @@
 
 @implementation RootViewController
 
+- (void) initCustomView {
+    UILabel *label1 = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 50, 44)];
+    [label1 setText:@"车型:"];
+    [[self view] addSubview:label1];
+    [label1 release];
+}
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        [self initCustomView];
     }
     return self;
 }
+
 
 - (void)viewDidLoad
 {
